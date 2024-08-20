@@ -1,0 +1,75 @@
+<!Doctype HTML>
+<html>
+
+<head>
+	<title>kyoka</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/conf3.css" type="text/css">
+	<script type="text/javascript" src="xxx.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="header-logo">
+			<h1>Kyoka</h1>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="./index.html#about">About</a></li>
+				<li><a href="./index.html#news">News</a></li>
+				<li><a href="./page1.html">Skill</a></li>
+				<li><a href="./page2.html">Works</a></li>
+				<li><a href="./page3.html">History</a></li>
+				<li><a href="./index.html#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<div id="history">
+			<h2>History</h2>
+			<ul>
+				<li>2003/05　長野県松本市で生まれる</li>
+				<li>2010/04　小学校に入学</li>
+				<li>2015/09　愛知県の小学校に転校</li>
+				<li>2016/03　小学校を卒業</li>
+				<li>2016/04　中学校に入学</li>
+				<li>2016/04　中学校の美術部に入部</li>
+				<li>2019/03　中学校を卒業</li>
+				<li>2019/04　名電高等学校に入学</li>
+				<li>2019/04　情報デザイン部に入部</li>
+				<li>2022/03　名電を卒業</li>
+				<li>2022/04　愛知工業大学に入学</li>
+			</ul>
+
+			<div id="morework">
+				<a href="./index.html" class="toppage">top page</a>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<p>
+			Copyright(C)Hida Kyoka – Portfolio Site All Rights Reserved.
+		</p>
+	</footer>
+</body>
+<script src="js/luminous.js"></script>
+<link href="css/luminous.css" rel="stylesheet" type="text/css">
+<script>
+	new LuminousGallery(document.querySelectorAll('.zoom-g'),
+		{ arrowNavugation: true },
+		{
+			caption:
+				function (trigger) {
+					return trigger.querySelector('img').getAttribute('alt');
+				}
+		}
+	);
+	var galleryOpts = {
+		// 矢印ナビゲーションを使用するかどうか
+		arrowNavigation: false,
+	};
+</script>
+
+</html>
