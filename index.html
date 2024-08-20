@@ -1,0 +1,141 @@
+<!Doctype HTML>
+<html>
+
+<head>
+	<title>kyoka</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/conf
+	.css" type="text/css">
+	<script type="text/javascript" src="./js/swiper.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="header-logo">
+			<h1>Kyoka</h1>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#news">News</a></li>
+				<li><a href="./page1.html">Skill</a></li>
+				<li><a href="./page2.html">Works</a></li>
+				<li><a href="./page3.html">History</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<div id="top-image">
+
+		</div>
+		<div id="news">
+			<div class="table_outer">
+				<div class="table_inner">
+					<h2>News</h2>
+					<table border="1">
+						<tr>
+							<th>2031/06/16</th>
+							<td>プロフィールを追加</td>
+						</tr>
+						<tr>
+							<th>2031/06/01</th>
+							<td>ポートフォリオに1つ作品を追加</td>
+						<tr>
+							<th>2031/05/31</th>
+							<td>メイン画像の変更</td>
+						</tr>
+						<tr>
+							<th>2031/05/22</th>
+							<td>レイアウトの変更</td>
+						</tr>
+						<tr>
+							<th>2031/05/10</th>
+							<td>ポートフォリオに3つ制作物を追加</td>
+						</tr>
+						<tr>
+							<th>2031/05/01</th>
+							<td>ポートフォリオに2つ制作物を追加</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div id="about">
+			<h2>About</h2>
+
+			<p>
+				初めまして！肥田京佳と申します。<br>3DCGや3DCGを用いた動画制作、絵を描くことが好きです。<br>
+				協力し合うことでより良い作品が生まれると考えています。<br>
+				色々な方々と仕事ができることを楽しみにしています。<br>
+				お客様からの要望を第一に考えた制作を行なっていきたいです。<br>
+				よろしくお願いします。
+			</p>
+
+		</div>
+		<h2>Work</h2>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="./images/katuteno.jpg" /></div>
+				<div class="swiper-slide"><img src="./images/mechacom.jpg" /></div>
+				<div class="swiper-slide"><img src="./images/kadaiken_tri.png" /></div>
+				<div class="swiper-slide"><img src="./images/vending machine_ren.png" /></div>
+			</div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+		<div id="morework">
+			<a href="./page2.html" class="viewmore">view more</a>
+		</div>
+
+		<div id="contact">
+			<h2>Contact</h2>
+			<div id="link">
+				<ul>
+					<li>
+						<a href="https://twitter.com/yokauka?s=20" id="twitter">
+							<img src="images/Logo-white.png">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/yokauka/" id="instagram">
+							<img src="images/Instagram_Glyph_White.png">
+						</a>
+					</li>
+					<li>
+						<a href="mailto:x22092xx@aitech.ac.jp" id="mail">
+							<img src="images/mail_icon.png">
+						</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+
+
+	</main>
+
+	<footer>
+		<p>
+			Copyright(C)Hida Kyoka – Portfolio Site</a> All Rights Reserved.
+		</p>
+	</footer>
+</body>
+<script src="js/swiper.js"></script>
+<link href="css/swiper.css" rel="stylesheet" type="text/css">
+<script>
+	//flip,fade,cube,civerflow
+	var swiper = new Swiper(".swiper-container", {
+		loop: true,
+		autoplay: true,
+		effect: 'fade',
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev'
+		}
+	});
+</script>
+
+</html>
