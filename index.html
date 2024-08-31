@@ -234,12 +234,22 @@
 	</footer>
 
 	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			const menuToggle = document.getElementById("menu-toggle");
-			const menu = document.getElementById("menu");
-
-			menuToggle.addEventListener("click", function () {
-				menu.classList.toggle("active"); // クラスの切り替えでメニューの表示/非表示を制御
+		document.addEventListener('DOMContentLoaded', function () {
+			// ハンバーガーメニューのアイコンとメニュー要素を取得
+			const menuToggle = document.querySelector('.menu-toggle');
+			const menu = document.querySelector('.menu');
+	
+			// メニューアイコンのクリックでメニューを開閉するイベントを追加
+			menuToggle.addEventListener('click', function () {
+				menu.classList.toggle('active'); // メニューを表示・非表示切替
+			});
+	
+			// メニュー内のリンクを取得し、クリックイベントを追加
+			const menuLinks = document.querySelectorAll('.menu li a');
+			menuLinks.forEach(link => {
+				link.addEventListener('click', function () {
+					menu.classList.remove('active'); // メニューを非表示にする
+				});
 			});
 		});
 	</script>
