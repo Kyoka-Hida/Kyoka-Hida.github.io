@@ -499,6 +499,9 @@ footer {
 	.top-text {
 		font-size: 24px;
 	}
+	#skill ul li {
+		width: 100%;
+	}
 
 	header ul {
 		margin: 20px 0;
