@@ -1,0 +1,375 @@
+@charset "utf-8";
+
+html,
+body {
+	width: auto;
+	margin: 0px auto;
+	padding: 0px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 62.5%;
+	color: #2F4251;
+	background: #FFF;
+	font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", Verdana, "ＭＳ Ｐゴシック", "MS P Gothic" Helvetica, sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
+p {
+	margin: 0 auto;
+	font-size: 1.6rem;
+}
+
+h2,
+h4,
+h5,
+h6 {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	clear: both;
+}
+
+h1 {
+	text-align: left;
+	margin: 0px 30px;
+	padding: 0px;
+	color: #EEE9DA;
+	clear: both;
+	display: none;
+}
+
+h2 {
+	margin: 150px 20% 20px 20%;
+	text-align: left;
+	color: #2F4251;
+	font-size: 3.2rem;
+}
+
+h3 {
+	font-size: 2.5rem;
+}
+
+li {
+	font-size: 2.0rem;
+}
+
+img {
+	border: none;
+	vertical-align: bottom;
+}
+
+/* ハンバーガーメニューアイコンのスタイル */
+.menu-toggle {
+	display: none;
+	/* 初期状態では非表示 */
+	position: fixed;
+	/* スクロールしても固定 */
+	/* relativeからabsoluteに変更 */
+	right: 20px;
+	/* 右端からの距離を指定 */
+	top: 20px;
+	/* 上端からの距離を指定 */
+	width: 30px;
+	height: 25px;
+	cursor: pointer;
+	z-index: 10000;
+	/* 他の要素の上に表示 */
+}
+
+
+.menu-toggle span {
+	display: block;
+	height: 3px;
+	background: #2F4251;
+	margin: 5px 0;
+	transition: 0.4s;
+}
+
+
+/*全体------------------------------------------------------------------------*/
+.top-text {
+	position: absolute;
+	top: 0;
+	left: 20%;
+	/* header ulと揃える */
+	font-size: 5.0rem;
+	margin: 50px 0;
+
+}
+
+header {
+	position: relative;
+	z-index: 9999;
+	min-width: 500px;
+	width: 100%;
+	height: 50px;
+}
+
+header ul {
+	margin: 130px 0px 0px 20%;
+	/* .top-textと揃える */
+	overflow: hidden;
+	padding: 0;
+}
+
+header nav li {
+	list-style: none;
+	float: left;
+	padding: 0;
+	margin: 10px 40px 0px 0px;
+}
+
+header a {
+	text-decoration: none;
+	color: #2F4251;
+}
+
+header a:hover {
+	color: #EA5514;
+}
+
+main {
+	margin-top: 50px;
+	/*メニューに隠れないように上を開ける*/
+}
+
+footer {
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+	color: #2F4251;
+	margin-top: auto;
+	border-top: solid 3px #EA5514;
+}
+
+/*装飾用タグ------------------------------------------------------------------------*/
+.contents {
+	margin: 0px 20%;
+}
+
+.contents h3 {
+	margin: 30px 0 0 0;
+}
+
+.work_box {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+}
+
+.work_box img {
+	width: 100%;
+}
+
+.contents p {
+	margin: 0;
+}
+
+#link ul {
+	display: flex;
+	justify-content: center;
+	margin: 200px 40px 50px 0px;
+}
+
+#link li {
+	list-style: none;
+}
+
+#twitter img {
+	width: 50px;
+}
+
+#instagram img {
+	width: 50px;
+	margin: 0 30px;
+}
+
+#mail img {
+	width: 50px;
+}
+
+.toppage {
+	text-decoration: none;
+	padding: 10px 25px;
+	color: #2F4251;
+	border-radius: 50px;
+	border: #2F4251 2px solid;
+	font-size: 1.6rem;
+}
+
+.toppage:hover {
+	background: #EA5514;
+	color: #FFF;
+	border: #EA5514 2px solid;
+}
+
+#morework {
+	text-align: center;
+	margin: 65px 0px 100px 0px;
+}
+
+/* タブレット対応 */
+@media (max-width: 768px) {
+
+	.contents {
+		margin: 0px 10%;
+	}
+
+	h2 {
+		margin: 150px 10% 20px 10%;
+	}
+
+	.top-text {
+		position: absolute;
+		top: 0;
+		left: 10%;
+		/* header ulと揃える */
+		font-size: 50px;
+		margin: 50px 0;
+
+	}
+
+	header ul {
+		margin: 130px 0px 0px 10%;
+		/* .top-textと揃える */
+		overflow: hidden;
+		padding: 0;
+	}
+
+
+	#link ul {
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		margin: 50px 10%;
+	}
+
+	#contact h2 {
+		text-align: center;
+	}
+}
+
+/* スマートフォン（横向き）対応 */
+@media (max-width: 576px) {
+
+	header {
+		height: auto;
+	}
+
+	/* ハンバーガーメニューアイコンを表示 */
+	.menu-toggle {
+		display: block;
+		position: fixed;
+		/* 位置を固定 */
+		top: 10px;
+		/* 画面上部からの距離 */
+		right: 10px;
+		/* 画面右からの距離 */
+		z-index: 10000;
+		/* メニューの上に表示 */
+		padding: 10px;
+	}
+
+	/* メニューの初期状態は非表示 */
+	.menu {
+		display: none;
+		flex-direction: column;
+		background: #FFF;
+		width: 80%;
+		position: fixed;
+		/* 位置を固定 */
+		top: 0px;
+		/* メニューアイコンの下に表示 */
+		left: 20%;
+		padding: 0;
+		z-index: 9999;
+		/* アイコンの下に表示 */
+		overflow: auto;
+		/* スクロール可能にする */
+		align-items: flex-end;
+		/* メニュー項目を右揃え */
+	}
+
+	/* ハンバーガーメニューがアクティブな時に表示 */
+	.menu.active {
+		display: flex;
+		top: -30px;
+		/* メニュー全体を画面上部に合わせる */
+		padding-top: 60px;
+		/* 3本線の部分の高さに余白を調整 */
+	}
+
+	/* メニュー項目のスタイル */
+	.menu li {
+		margin: 10px 20px;
+		text-align: right;
+		/* メニューの文字を右揃えに変更 */
+	}
+
+
+	.top-text {
+		font-size: 24px;
+	}
+
+	header ul {
+		margin: 20px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	header nav li {
+		margin: 10px 0;
+	}
+
+}
+
+/* スマートフォン（縦向き）対応 */
+@media (max-width: 360px) {
+
+	header {
+		height: auto;
+	}
+
+	header ul {
+		margin: 0;
+		padding: 10px;
+	}
+
+	.menu.active {
+		display: flex;
+		top: -30px;
+		/* メニュー全体を画面上部に合わせる */
+		padding-top: 100px;
+		/* 3本線の部分の高さに余白を調整 */
+	}
+
+
+	.top-text {
+		font-size: 24px;
+	}
+
+
+
+	#contact {
+		margin-top: 100px;
+	}
+
+	#link ul {
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		margin: 50px 10%;
+	}
+
+	#contact h2 {
+		text-align: center;
+	}
+
+}
