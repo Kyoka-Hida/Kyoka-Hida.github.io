@@ -1,0 +1,107 @@
+<!Doctype HTML>
+<html>
+
+<head>
+	<title>Kyoka Hida</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/conf_work.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="top-text">Kyoka Hida</div>
+	<header>
+		<!-- ハンバーガーメニューのボタン -->
+		<div class="menu-toggle" id="menu-toggle">
+			<!-- ハンバーガーメニューアイコン -->
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<nav>
+			<ul id="menu" class="menu">
+				<li><a href="../index.html">About</a></li>
+				<li><a href="../index.html#skill">Skill</a></li>
+				<li><a href="../index.html#works">Works</a></li>
+				<li><a href="../index.html#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+
+
+		<h2>RECARO ハイライト動画</h2>
+		<div class="contents">
+			<div class="work_box">
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/oABmW7E6j80?si=Oa7odq0GglarWtIb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+			<h3>概要</h3>
+			<p>
+				※こちらはRECAROの公式の動画ではございません。RECARO様から許可をいただき、素材をお借りして制作いたしました。<br>RECAROレーシングチームを構成する全てを映すことができるよう、構成を工夫しました。メカニックやドライバー、スポンサーなど全て含めてのチームということを表現しました。
+			</p>
+			<div class="detail">
+				<h3>制作期間</h3>
+				<p>1ヶ月</p>
+				<h3>使用ツール</h3>
+				<p>After Effects / Premiere Pro</p>
+			</div>
+		</div>
+
+
+
+
+
+		<div id="morework">
+			<a href="../index.html#works" class="toppage">Back</a>
+		</div>
+
+
+
+		</div>
+
+		<div id="contact">
+			<div id="link">
+				<ul>
+					<li>
+						<a href="https://twitter.com/yokauka?s=20" id="twitter">
+							<img src="../images/Logo-white.png">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/yokauka/" id="instagram">
+							<img src="../images/Instagram_Glyph_White.png">
+						</a>
+					</li>
+					<li>
+						<a href="mailto:x22092xx@aitech.ac.jp" id="mail">
+							<img src="../images/mail_icon.png">
+						</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+
+
+	</main>
+
+	<footer>
+		<p>
+			Copyright(C)Hida Kyoka – Portfolio Site All Rights Reserved.
+		</p>
+	</footer>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const menuToggle = document.getElementById("menu-toggle");
+			const menu = document.getElementById("menu");
+
+			menuToggle.addEventListener("click", function () {
+				menu.classList.toggle("active"); // クラスの切り替えでメニューの表示/非表示を制御
+			});
+		});
+	</script>
+</body>
+
+
+</html>
